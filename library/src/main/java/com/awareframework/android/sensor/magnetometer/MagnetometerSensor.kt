@@ -155,6 +155,7 @@ class MagnetometerSensor : AwareSensor(), SensorEventListener {
 
         val device = MagnetometerDevice().apply {
             deviceId = CONFIG.deviceId
+            label = CONFIG.label
             timestamp = System.currentTimeMillis()
 
             maxRange = sensor.maximumRange
